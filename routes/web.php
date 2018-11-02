@@ -16,5 +16,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('dp', 'WearableDataPointsController');
+
 Route::get('ver/{mac}','FirmwareController@ver');
 Route::get('bin/{mac}','FirmwareController@bin');
