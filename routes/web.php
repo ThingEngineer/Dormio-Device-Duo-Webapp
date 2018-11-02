@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('ver/{mac}','FirmwareController@ver');
+Route::get('bin/{mac}','FirmwareController@bin');
